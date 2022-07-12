@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+
+{% block content %}
+{% load static %}
+
+    <title>Ahyeon's Diary</title>
+
+    <h1>This is ahyeon's diary page</h1>
+    <a href="planner/">to planner page</a><br><br>
+    <img src="{% static 'img/007.png' %}">
+
+    <div class="project-box">
+        <div class="project-content">
+           <h1>vacation</h1>
+           <span>July 2 ~ July 3</span>
+           <p>친구들과 여행</p>
+        </div>
+   </div>
+
+    
+
+
+
+{% endblock %}

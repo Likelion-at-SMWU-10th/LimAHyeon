@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+
+{% block content %}
+{% load static %}
+<head>
+    <link rel="stylesheet" href="planner.css">
+    <title>WEEKLY PlANNER</title>
+    <h1>내일을 준비하는 기록</h1>
+    <a href="/">to main page</a>
+</head>
+
+    <body>
+        <div class="container-box">
+            <div class="contents">
+                <h5>To Do List</h5>
+                <ul>
+                    <li>멋쟁이 사자처럼 6주차 과제하기 </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="inputlist">
+            <h2>아래 입력칸에 오늘 할일을 입력해주세요</h2>
+            <form>
+                <input type="text" placeholder="해야할 일을 입력하세요">
+            </form>
+        </div>
+ 
+
+    </body>
+
+{% endblock %}
