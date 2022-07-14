@@ -21,5 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('planner/', views.planner, name='planner'),
+    path('diary/', views.diary, name='diary'),
+    path('detail/<int:diary_id>', views.detail, name='detail'),
     path('record/', include('record.urls')),
+    
 ]
