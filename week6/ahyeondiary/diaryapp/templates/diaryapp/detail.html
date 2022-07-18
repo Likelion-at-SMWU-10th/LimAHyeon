@@ -1,0 +1,21 @@
+{% extends 'diaryapp/base.html' %}
+
+{% block content %}
+{% load static %}
+
+    <title>My Diary</title>
+
+    <h1>Diary List</h1>
+    <br><br>
+    
+    <h3> 제목: {{ diary.title }} </h3>
+    <p> 날짜: {{ diary.date }} </p>
+    <p> 자세한 본문: {{ diary.body }}</p>
+    <a href="{% url 'diaryupdate' diary.id %}">수정하기</a>
+    <a href="{% url 'diarydelete' diary.id %}">삭제하기</a>
+    
+ 
+    <br>
+    <hr>
+
+{% endblock %}
