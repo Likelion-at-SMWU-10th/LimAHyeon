@@ -1,0 +1,21 @@
+{% extends 'diaryapp/base.html'%}
+
+{% block content %}
+
+
+    <title>Diary List</title>
+    <h1>Diary List</h1> <br><br>
+
+    {% for diary in diarys.all %}
+
+       <h3> 제목 : {{ diary.title }}</h3>
+        <p> 날짜: {{ diary.pub_date }}</p>
+        <p> 본문 미리보기 : {{ diary.summary }} <a href ="{% url 'detail' diary.id %}">...more</a></p> <br>
+    {% endfor %}
+
+    <a href="/">to main page</a>
+
+
+
+
+{% endblock %}

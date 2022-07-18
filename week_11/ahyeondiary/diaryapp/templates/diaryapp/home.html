@@ -1,0 +1,25 @@
+{% extends 'diaryapp/base.html'%}
+
+{% block content %}
+{% load static %}
+
+    <title>Ahyeon's Diary</title>
+
+    <h1>This is ahyeon's diary page</h1>
+    <a href="diary/">to diary page</a><br><br>
+    <img src="{% static 'img/007.png' %}">
+
+    <div class="inputlist">
+      <h5>아래 입력칸에 오늘 할일을 입력해주세요</h5>
+      <form>
+          <input type="text" placeholder="해야할 일을 입력하세요">
+      </form>
+  </div>
+
+    
+
+    
+
+
+
+{% endblock %}
